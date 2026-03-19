@@ -4,10 +4,11 @@ using System.Text;
 
 namespace SILAKBO_FINAL.SILAKBO.Models
 {
-    public class SupportContact
+    public class SupportResource
     {
-        public int ContactID { get; set; }
+        public int ResourceID { get; set; }
         public string Name { get; set; }
-        public string ContactInfo { get; set; }
+        public string Type { get; set; }
+        public string Contact { get; set; }
     }
 }

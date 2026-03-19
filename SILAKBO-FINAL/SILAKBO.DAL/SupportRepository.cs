@@ -7,9 +7,9 @@ using System.Text;
 
 public class SupportRepository
 {
-    public List<SupportContact> GetAllContacts()
+    public List<SupportResource> GetAllResources()
     {
-        List<SupportContact> contacts = new List<SupportContact>();
+        List<SupportResource> contacts = new List<SupportResource>();
         using (var conn = DBConnection.GetConnection())
         {
             conn.Open();
@@ -20,16 +20,20 @@ public class SupportRepository
                 {
                     while (reader.Read())
                     {
-                        contacts.Add(new SupportContact
+                        contacts.Add(new SupportResource
                         {
-                            ContactID = reader.GetInt32("ContactID"),
+                            ResourceID = reader.GetInt32("ResourceID"),
                             Name = reader.GetString("Name"),
-                            ContactInfo = reader.GetString("ContactInfo")
+                            Type = reader.GetString("Type"),
+                            Contact = reader.GetString("Contact")
                         });
                     }
                 }
             }
         }
+
         return contacts;
+
+
     }
 }
