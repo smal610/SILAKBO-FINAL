@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyProfileForm));
-            textBox1 = new TextBox();
+            txtName = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            btnClose = new Button();
+            txtUsername = new TextBox();
+            txtGender = new TextBox();
+            txtBirthday = new TextBox();
+            txtRole = new TextBox();
             pBLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pBLogo).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(605, 212);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(318, 29);
-            textBox1.TabIndex = 0;
+            txtName.Font = new Font("Segoe UI", 12F);
+            txtName.Location = new Point(605, 212);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(318, 29);
+            txtName.TabIndex = 0;
             // 
             // label1
             // 
@@ -107,46 +107,47 @@
             label5.TabIndex = 5;
             label5.Text = "Role:";
             // 
-            // button1
+            // btnClose
             // 
-            button1.Location = new Point(683, 480);
-            button1.Name = "button1";
-            button1.Size = new Size(83, 28);
-            button1.TabIndex = 6;
-            button1.Text = "Close";
-            button1.UseVisualStyleBackColor = true;
+            btnClose.Location = new Point(683, 480);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(83, 28);
+            btnClose.TabIndex = 6;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click_1;
             // 
-            // textBox2
+            // txtUsername
             // 
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(605, 259);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(318, 29);
-            textBox2.TabIndex = 7;
+            txtUsername.Font = new Font("Segoe UI", 12F);
+            txtUsername.Location = new Point(605, 259);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(318, 29);
+            txtUsername.TabIndex = 7;
             // 
-            // textBox3
+            // txtGender
             // 
-            textBox3.Font = new Font("Segoe UI", 12F);
-            textBox3.Location = new Point(605, 312);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(318, 29);
-            textBox3.TabIndex = 8;
+            txtGender.Font = new Font("Segoe UI", 12F);
+            txtGender.Location = new Point(605, 312);
+            txtGender.Name = "txtGender";
+            txtGender.Size = new Size(318, 29);
+            txtGender.TabIndex = 8;
             // 
-            // textBox4
+            // txtBirthday
             // 
-            textBox4.Font = new Font("Segoe UI", 12F);
-            textBox4.Location = new Point(605, 363);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(318, 29);
-            textBox4.TabIndex = 9;
+            txtBirthday.Font = new Font("Segoe UI", 12F);
+            txtBirthday.Location = new Point(605, 363);
+            txtBirthday.Name = "txtBirthday";
+            txtBirthday.Size = new Size(318, 29);
+            txtBirthday.TabIndex = 9;
             // 
-            // textBox5
+            // txtRole
             // 
-            textBox5.Font = new Font("Segoe UI", 12F);
-            textBox5.Location = new Point(605, 412);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(318, 29);
-            textBox5.TabIndex = 10;
+            txtRole.Font = new Font("Segoe UI", 12F);
+            txtRole.Location = new Point(605, 412);
+            txtRole.Name = "txtRole";
+            txtRole.Size = new Size(318, 29);
+            txtRole.TabIndex = 10;
             // 
             // pBLogo
             // 
@@ -166,17 +167,17 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(964, 591);
             Controls.Add(pBLogo);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(button1);
+            Controls.Add(txtRole);
+            Controls.Add(txtBirthday);
+            Controls.Add(txtGender);
+            Controls.Add(txtUsername);
+            Controls.Add(btnClose);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(txtName);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MyProfileForm";
             Text = "MyProfileForm";
@@ -187,17 +188,17 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtName;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private Button btnClose;
+        private TextBox txtUsername;
+        private TextBox txtGender;
+        private TextBox txtBirthday;
+        private TextBox txtRole;
         private PictureBox pBLogo;
     }
 }
