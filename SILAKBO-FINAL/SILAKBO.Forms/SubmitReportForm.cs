@@ -18,7 +18,18 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
         {
             InitializeComponent();
             user = currentUser;
-            comboHarassmentType.Items.AddRange(new string[] { "Verbal", "Physical", "Sexual", "Cyber" });
+            comboHarassmentType.Items.AddRange(new string[] {
+                "Verbal Harassment",
+                "Physical Harassment",
+                "Sexual Harassment",
+                "Psychological / Emotional Harassment",
+                "Cyber Harassment",
+                "Workplace Harassment",
+                "Discriminatory Harassment",
+                "Sexual Orientation / Gender Identity Harassment",
+                "Stalking",
+                "Quid Pro Quo Harassment",
+                "Bullying"});
             comboHarassmentType.SelectedIndex = 0;
         }
 
