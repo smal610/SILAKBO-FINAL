@@ -47,7 +47,7 @@
             // txtFullName
             // 
             txtFullName.Font = new Font("Segoe UI", 12F);
-            txtFullName.Location = new Point(368, 150);
+            txtFullName.Location = new Point(367, 125);
             txtFullName.Name = "txtFullName";
             txtFullName.Size = new Size(433, 29);
             txtFullName.TabIndex = 0;
@@ -57,7 +57,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(154, 153);
+            label1.Location = new Point(153, 128);
             label1.Name = "label1";
             label1.Size = new Size(92, 21);
             label1.TabIndex = 1;
@@ -68,7 +68,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(154, 200);
+            label2.Location = new Point(153, 175);
             label2.Name = "label2";
             label2.Size = new Size(164, 21);
             label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(154, 247);
+            label3.Location = new Point(153, 222);
             label3.Name = "label3";
             label3.Size = new Size(102, 21);
             label3.TabIndex = 3;
@@ -90,7 +90,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(154, 433);
+            label4.Location = new Point(153, 408);
             label4.Name = "label4";
             label4.Size = new Size(166, 21);
             label4.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             comboHarassmentType.Font = new Font("Segoe UI", 12F);
             comboHarassmentType.FormattingEnabled = true;
-            comboHarassmentType.Location = new Point(367, 197);
+            comboHarassmentType.Location = new Point(366, 172);
             comboHarassmentType.Name = "comboHarassmentType";
             comboHarassmentType.Size = new Size(434, 29);
             comboHarassmentType.TabIndex = 5;
@@ -108,7 +108,7 @@
             // txtDescription
             // 
             txtDescription.Font = new Font("Segoe UI", 12F);
-            txtDescription.Location = new Point(368, 244);
+            txtDescription.Location = new Point(367, 219);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(433, 170);
@@ -117,7 +117,7 @@
             // txtEvidence
             // 
             txtEvidence.Font = new Font("Segoe UI", 12F);
-            txtEvidence.Location = new Point(368, 430);
+            txtEvidence.Location = new Point(367, 405);
             txtEvidence.Name = "txtEvidence";
             txtEvidence.Size = new Size(334, 29);
             txtEvidence.TabIndex = 7;
@@ -125,22 +125,24 @@
             // btnBrowseEvidence
             // 
             btnBrowseEvidence.Font = new Font("Segoe UI", 12F);
-            btnBrowseEvidence.Location = new Point(708, 429);
+            btnBrowseEvidence.Location = new Point(707, 404);
             btnBrowseEvidence.Name = "btnBrowseEvidence";
             btnBrowseEvidence.Size = new Size(93, 29);
             btnBrowseEvidence.TabIndex = 8;
             btnBrowseEvidence.Text = "Browse";
             btnBrowseEvidence.UseVisualStyleBackColor = true;
+            btnBrowseEvidence.Click += btnBrowseEvidence_Click;
             // 
             // btnSubmit
             // 
             btnSubmit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSubmit.Location = new Point(368, 479);
+            btnSubmit.Location = new Point(367, 454);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(433, 44);
             btnSubmit.TabIndex = 9;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
+            btnSubmit.Click += btnSubmit_Click;
             // 
             // pictureBox1
             // 

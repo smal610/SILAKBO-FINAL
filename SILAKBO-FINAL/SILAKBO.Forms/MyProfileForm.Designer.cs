@@ -29,35 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyProfileForm));
-            txtName = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             btnClose = new Button();
-            txtUsername = new TextBox();
-            txtGender = new TextBox();
-            txtBirthday = new TextBox();
-            txtRole = new TextBox();
             pBLogo = new PictureBox();
+            lblName = new Label();
+            lblUsername = new Label();
+            lblGender = new Label();
+            lblBirthday = new Label();
+            lblRole = new Label();
             ((System.ComponentModel.ISupportInitialize)pBLogo).BeginInit();
             SuspendLayout();
-            // 
-            // txtName
-            // 
-            txtName.Font = new Font("Segoe UI", 12F);
-            txtName.Location = new Point(605, 212);
-            txtName.Name = "txtName";
-            txtName.Size = new Size(318, 29);
-            txtName.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(497, 220);
+            label1.Location = new Point(545, 219);
             label1.Name = "label1";
             label1.Size = new Size(60, 21);
             label1.TabIndex = 1;
@@ -68,7 +60,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(497, 267);
+            label2.Location = new Point(545, 266);
             label2.Name = "label2";
             label2.Size = new Size(91, 21);
             label2.TabIndex = 2;
@@ -79,7 +71,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(497, 320);
+            label3.Location = new Point(545, 319);
             label3.Name = "label3";
             label3.Size = new Size(70, 21);
             label3.TabIndex = 3;
@@ -90,7 +82,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(497, 371);
+            label4.Location = new Point(545, 370);
             label4.Name = "label4";
             label4.Size = new Size(79, 21);
             label4.TabIndex = 4;
@@ -101,7 +93,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label5.Location = new Point(497, 420);
+            label5.Location = new Point(545, 419);
             label5.Name = "label5";
             label5.Size = new Size(48, 21);
             label5.TabIndex = 5;
@@ -115,39 +107,7 @@
             btnClose.TabIndex = 6;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = true;
-            btnClose.Click += btnClose_Click_1;
-            // 
-            // txtUsername
-            // 
-            txtUsername.Font = new Font("Segoe UI", 12F);
-            txtUsername.Location = new Point(605, 259);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(318, 29);
-            txtUsername.TabIndex = 7;
-            // 
-            // txtGender
-            // 
-            txtGender.Font = new Font("Segoe UI", 12F);
-            txtGender.Location = new Point(605, 312);
-            txtGender.Name = "txtGender";
-            txtGender.Size = new Size(318, 29);
-            txtGender.TabIndex = 8;
-            // 
-            // txtBirthday
-            // 
-            txtBirthday.Font = new Font("Segoe UI", 12F);
-            txtBirthday.Location = new Point(605, 363);
-            txtBirthday.Name = "txtBirthday";
-            txtBirthday.Size = new Size(318, 29);
-            txtBirthday.TabIndex = 9;
-            // 
-            // txtRole
-            // 
-            txtRole.Font = new Font("Segoe UI", 12F);
-            txtRole.Location = new Point(605, 412);
-            txtRole.Name = "txtRole";
-            txtRole.Size = new Size(318, 29);
-            txtRole.TabIndex = 10;
+            btnClose.Click += btnClose_Click;
             // 
             // pBLogo
             // 
@@ -159,6 +119,56 @@
             pBLogo.TabIndex = 11;
             pBLogo.TabStop = false;
             // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.BackColor = Color.Transparent;
+            lblName.Font = new Font("Segoe UI", 12F);
+            lblName.Location = new Point(683, 219);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(0, 21);
+            lblName.TabIndex = 12;
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.BackColor = Color.Transparent;
+            lblUsername.Font = new Font("Segoe UI", 12F);
+            lblUsername.Location = new Point(683, 266);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(0, 21);
+            lblUsername.TabIndex = 13;
+            // 
+            // lblGender
+            // 
+            lblGender.AutoSize = true;
+            lblGender.BackColor = Color.Transparent;
+            lblGender.Font = new Font("Segoe UI", 12F);
+            lblGender.Location = new Point(683, 319);
+            lblGender.Name = "lblGender";
+            lblGender.Size = new Size(0, 21);
+            lblGender.TabIndex = 14;
+            // 
+            // lblBirthday
+            // 
+            lblBirthday.AutoSize = true;
+            lblBirthday.BackColor = Color.Transparent;
+            lblBirthday.Font = new Font("Segoe UI", 12F);
+            lblBirthday.Location = new Point(683, 370);
+            lblBirthday.Name = "lblBirthday";
+            lblBirthday.Size = new Size(0, 21);
+            lblBirthday.TabIndex = 15;
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.BackColor = Color.Transparent;
+            lblRole.Font = new Font("Segoe UI", 12F);
+            lblRole.Location = new Point(683, 419);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(0, 21);
+            lblRole.TabIndex = 16;
+            // 
             // MyProfileForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -166,18 +176,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(964, 591);
+            Controls.Add(lblRole);
+            Controls.Add(lblBirthday);
+            Controls.Add(lblGender);
+            Controls.Add(lblUsername);
+            Controls.Add(lblName);
             Controls.Add(pBLogo);
-            Controls.Add(txtRole);
-            Controls.Add(txtBirthday);
-            Controls.Add(txtGender);
-            Controls.Add(txtUsername);
             Controls.Add(btnClose);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(txtName);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MyProfileForm";
@@ -201,5 +211,10 @@
         private TextBox txtBirthday;
         private TextBox txtRole;
         private PictureBox pBLogo;
+        private Label lblName;
+        private Label lblUsername;
+        private Label lblGender;
+        private Label lblBirthday;
+        private Label lblRole;
     }
 }

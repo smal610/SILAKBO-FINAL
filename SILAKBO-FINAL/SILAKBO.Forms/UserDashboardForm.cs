@@ -21,15 +21,15 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
             lblWelcome.Text = $"Welcome {user.Name}";
         }
 
+        private void btnMyProfile_Click(object sender, EventArgs e) => new MyProfileForm(user).ShowDialog();
+        private void btnSubmitReport_Click(object sender, EventArgs e) => new SubmitReportForm(user).ShowDialog();
+        private void btnTrackCase_Click(object sender, EventArgs e) => new TrackCaseForm(user).ShowDialog();
+        private void btnSupportResources_Click(object sender, EventArgs e) => new SupportResourcesForm().ShowDialog();
+
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
             new LoginForms().Show();
         }
-
-        private void btnMyProfile_Click(object sender, EventArgs e) => new MyProfileForm(user).ShowDialog();
-        private void btnSubmitReport_Click(object sender, EventArgs e) => new SubmitReportForm(user).ShowDialog();
-        private void btnTrackCase_Click(object sender, EventArgs e) => new TrackCaseForm(user).ShowDialog();
-        private void btnSupportResources_Click(object sender, EventArgs e) => new SupportResourcesForm().ShowDialog();
     }
 }

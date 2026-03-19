@@ -156,10 +156,10 @@
             // 
             // btnRegister
             // 
-            btnRegister.BackColor = Color.PaleVioletRed;
+            btnRegister.BackColor = Color.Indigo;
             btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(470, 476);
+            btnRegister.Location = new Point(707, 488);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(218, 49);
             btnRegister.TabIndex = 13;
@@ -169,10 +169,10 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.Indigo;
+            btnLogin.BackColor = Color.PaleVioletRed;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(707, 476);
+            btnLogin.Location = new Point(470, 488);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(218, 49);
             btnLogin.TabIndex = 12;
@@ -198,7 +198,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(783, 458);
+            label6.Location = new Point(470, 470);
             label6.Name = "label6";
             label6.Size = new Size(142, 15);
             label6.TabIndex = 15;

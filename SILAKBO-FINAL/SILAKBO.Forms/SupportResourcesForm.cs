@@ -20,6 +20,7 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
         }
 
         private void LoadContacts() => dgvSupport.DataSource = supportRepo.GetAllContacts();
+
         private void btnRefresh_Click(object sender, EventArgs e) => LoadContacts();
     }
 }

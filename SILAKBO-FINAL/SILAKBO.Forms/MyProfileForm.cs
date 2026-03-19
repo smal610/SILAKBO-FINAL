@@ -14,22 +14,28 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
     {
         private User user;
 
+        //public MyProfileForm(User currentUser)
+        //{
+        //    InitializeComponent();
+        //    user = currentUser;
+        //    txtName.Text = user.Name;
+        //    txtUsername.Text = user.Username;
+        //    txtGender.Text = user.Gender;
+        //    txtBirthday.Text = user.Birthday.ToShortDateString();
+        //    txtRole.Text = user.Role;
+        //}
+
         public MyProfileForm(User currentUser)
         {
             InitializeComponent();
             user = currentUser;
-            txtName.Text = user.Name;
-            txtUsername.Text = user.Username;
-            txtGender.Text = user.Gender;
-            txtBirthday.Text = user.Birthday.ToShortDateString();
-            txtRole.Text = user.Role;
+            lblName.Text = user.Name;
+            lblUsername.Text = user.Username;
+            lblGender.Text = user.Gender;
+            lblBirthday.Text = user.Birthday.ToShortDateString();
+            lblRole.Text = user.Role;
         }
 
         private void btnClose_Click(object sender, EventArgs e) => this.Close();
-
-        private void btnClose_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

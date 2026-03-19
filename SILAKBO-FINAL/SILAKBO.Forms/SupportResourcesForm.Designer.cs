@@ -53,6 +53,7 @@
             btnRefresh.TabIndex = 1;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // pictureBox1
             // 

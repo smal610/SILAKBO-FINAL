@@ -25,5 +25,10 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
         {
             dgvReports.DataSource = reportService.GetUserReports(user.UserID);
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadReports();
+        }
     }
 }
