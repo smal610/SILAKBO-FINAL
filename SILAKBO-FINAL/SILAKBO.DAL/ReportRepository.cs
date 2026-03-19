@@ -26,6 +26,21 @@ public class ReportRepository
         }
     }
 
+    public void UpdateReportStatus(int reportID, string status)
+    {
+        using (var conn = DBConnection.GetConnection())
+        {
+            conn.Open();
+            string sql = "UPDATE Reports SET Status=@status WHERE ReportID=@id";
+            using (var cmd = new MySqlCommand(sql, conn))
+            {
+                cmd.Parameters.AddWithValue("@status", status);
+                cmd.Parameters.AddWithValue("@id", reportID);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
+
     public List<Report> GetReportsByUser(int userId)
     {
         List<Report> reports = new List<Report>();

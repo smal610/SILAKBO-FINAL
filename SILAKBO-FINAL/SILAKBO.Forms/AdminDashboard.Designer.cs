@@ -32,6 +32,9 @@
             pictureBox1 = new PictureBox();
             btnRefresh = new Button();
             dgvReports = new DataGridView();
+            btnUpdateStatus = new Button();
+            comboStatus = new ComboBox();
+            btnLogout = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvReports).BeginInit();
             SuspendLayout();
@@ -48,9 +51,9 @@
             // 
             // btnRefresh
             // 
-            btnRefresh.Location = new Point(822, 78);
+            btnRefresh.Location = new Point(315, 99);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(75, 23);
+            btnRefresh.Size = new Size(89, 23);
             btnRefresh.TabIndex = 4;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
@@ -60,16 +63,48 @@
             // 
             dgvReports.BackgroundColor = Color.White;
             dgvReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvReports.Location = new Point(63, 107);
+            dgvReports.Location = new Point(12, 128);
             dgvReports.Name = "dgvReports";
-            dgvReports.Size = new Size(834, 439);
+            dgvReports.Size = new Size(940, 439);
             dgvReports.TabIndex = 3;
+            dgvReports.SelectionChanged += dgvReports_SelectionChanged;
+            // 
+            // btnUpdateStatus
+            // 
+            btnUpdateStatus.Location = new Point(218, 99);
+            btnUpdateStatus.Name = "btnUpdateStatus";
+            btnUpdateStatus.Size = new Size(91, 23);
+            btnUpdateStatus.TabIndex = 6;
+            btnUpdateStatus.Text = "Update Status";
+            btnUpdateStatus.UseVisualStyleBackColor = true;
+            btnUpdateStatus.Click += btnUpdateStatus_Click;
+            // 
+            // comboStatus
+            // 
+            comboStatus.FormattingEnabled = true;
+            comboStatus.Location = new Point(12, 99);
+            comboStatus.Name = "comboStatus";
+            comboStatus.Size = new Size(200, 23);
+            comboStatus.TabIndex = 7;
+            // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(877, 98);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(75, 23);
+            btnLogout.TabIndex = 8;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
             // 
             // AdminDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(964, 591);
+            Controls.Add(btnLogout);
+            Controls.Add(comboStatus);
+            Controls.Add(btnUpdateStatus);
             Controls.Add(pictureBox1);
             Controls.Add(btnRefresh);
             Controls.Add(dgvReports);
@@ -87,5 +122,8 @@
         private PictureBox pictureBox1;
         private Button btnRefresh;
         private DataGridView dgvReports;
+        private Button btnUpdateStatus;
+        private ComboBox comboStatus;
+        private Button btnLogout;
     }
 }
