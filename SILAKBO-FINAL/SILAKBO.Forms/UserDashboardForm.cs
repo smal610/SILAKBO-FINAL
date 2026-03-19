@@ -10,7 +10,7 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
 {
     public partial class UserDashboardForm : Form
     {
-        public UserDashboardForm()
+        public UserDashboardForm(Models.User user)
         {
             InitializeComponent();
         }

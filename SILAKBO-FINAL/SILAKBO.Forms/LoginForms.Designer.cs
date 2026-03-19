@@ -62,7 +62,6 @@
             lblUsername.Size = new Size(91, 21);
             lblUsername.TabIndex = 1;
             lblUsername.Text = "Username:";
-            lblUsername.Click += this.label1_Click;
             // 
             // lblPassword
             // 
@@ -74,7 +73,6 @@
             lblPassword.Size = new Size(86, 21);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password:";
-            lblPassword.Click += this.label2_Click;
             // 
             // txtUsername
             // 
@@ -115,6 +113,7 @@
             btnLogin.TabIndex = 7;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label3
             // 
@@ -138,7 +137,7 @@
             btnRegister.TabIndex = 9;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
-            btnRegister.Click += button2_Click;
+            btnRegister.Click += btnRegister_Click;
             // 
             // btnReset
             // 
@@ -148,6 +147,7 @@
             btnReset.TabIndex = 10;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // LoginForms
             // 
