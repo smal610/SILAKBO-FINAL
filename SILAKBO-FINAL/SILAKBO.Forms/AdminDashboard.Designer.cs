@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             pictureBox1 = new PictureBox();
             btnRefresh = new Button();
-            dgvSupport = new DataGridView();
+            dgvReports = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvSupport).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvReports).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -48,21 +48,22 @@
             // 
             // btnRefresh
             // 
-            btnRefresh.Location = new Point(818, 78);
+            btnRefresh.Location = new Point(822, 78);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(75, 23);
             btnRefresh.TabIndex = 4;
             btnRefresh.Text = "Refresh";
             btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
-            // dgvSupport
+            // dgvReports
             // 
-            dgvSupport.BackgroundColor = Color.White;
-            dgvSupport.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSupport.Location = new Point(59, 107);
-            dgvSupport.Name = "dgvSupport";
-            dgvSupport.Size = new Size(834, 439);
-            dgvSupport.TabIndex = 3;
+            dgvReports.BackgroundColor = Color.White;
+            dgvReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReports.Location = new Point(63, 107);
+            dgvReports.Name = "dgvReports";
+            dgvReports.Size = new Size(834, 439);
+            dgvReports.TabIndex = 3;
             // 
             // AdminDashboard
             // 
@@ -71,11 +72,11 @@
             ClientSize = new Size(964, 591);
             Controls.Add(pictureBox1);
             Controls.Add(btnRefresh);
-            Controls.Add(dgvSupport);
+            Controls.Add(dgvReports);
             Name = "AdminDashboard";
             Text = "AdminDashboard";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvSupport).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvReports).EndInit();
             ResumeLayout(false);
         }
 
@@ -83,6 +84,6 @@
 
         private PictureBox pictureBox1;
         private Button btnRefresh;
-        private DataGridView dgvSupport;
+        private DataGridView dgvReports;
     }
 }
