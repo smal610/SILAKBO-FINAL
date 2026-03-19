@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubmitReportForm));
-            textBox1 = new TextBox();
+            txtFullName = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            comboBox1 = new ComboBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            comboHarassmentType = new ComboBox();
+            txtDescription = new TextBox();
+            txtEvidence = new TextBox();
             btnBrowseEvidence = new Button();
             btnSubmit = new Button();
             pictureBox1 = new PictureBox();
@@ -44,13 +44,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // txtFullName
             // 
-            textBox1.Font = new Font("Segoe UI", 12F);
-            textBox1.Location = new Point(368, 150);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(433, 29);
-            textBox1.TabIndex = 0;
+            txtFullName.Font = new Font("Segoe UI", 12F);
+            txtFullName.Location = new Point(368, 150);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(433, 29);
+            txtFullName.TabIndex = 0;
             // 
             // label1
             // 
@@ -96,31 +96,31 @@
             label4.TabIndex = 4;
             label4.Text = "Evidence (Optional):";
             // 
-            // comboBox1
+            // comboHarassmentType
             // 
-            comboBox1.Font = new Font("Segoe UI", 12F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(367, 197);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(434, 29);
-            comboBox1.TabIndex = 5;
+            comboHarassmentType.Font = new Font("Segoe UI", 12F);
+            comboHarassmentType.FormattingEnabled = true;
+            comboHarassmentType.Location = new Point(367, 197);
+            comboHarassmentType.Name = "comboHarassmentType";
+            comboHarassmentType.Size = new Size(434, 29);
+            comboHarassmentType.TabIndex = 5;
             // 
-            // textBox2
+            // txtDescription
             // 
-            textBox2.Font = new Font("Segoe UI", 12F);
-            textBox2.Location = new Point(368, 244);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(433, 170);
-            textBox2.TabIndex = 6;
+            txtDescription.Font = new Font("Segoe UI", 12F);
+            txtDescription.Location = new Point(368, 244);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(433, 170);
+            txtDescription.TabIndex = 6;
             // 
-            // textBox3
+            // txtEvidence
             // 
-            textBox3.Font = new Font("Segoe UI", 12F);
-            textBox3.Location = new Point(368, 430);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(334, 29);
-            textBox3.TabIndex = 7;
+            txtEvidence.Font = new Font("Segoe UI", 12F);
+            txtEvidence.Location = new Point(368, 430);
+            txtEvidence.Name = "txtEvidence";
+            txtEvidence.Size = new Size(334, 29);
+            txtEvidence.TabIndex = 7;
             // 
             // btnBrowseEvidence
             // 
@@ -174,14 +174,14 @@
             Controls.Add(pictureBox1);
             Controls.Add(btnSubmit);
             Controls.Add(btnBrowseEvidence);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(txtEvidence);
+            Controls.Add(txtDescription);
+            Controls.Add(comboHarassmentType);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(txtFullName);
             Name = "SubmitReportForm";
             Text = "Submit Report";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -191,14 +191,14 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtFullName;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private ComboBox comboHarassmentType;
+        private TextBox txtDescription;
+        private TextBox txtEvidence;
         private Button btnBrowseEvidence;
         private Button btnSubmit;
         private PictureBox pictureBox1;
