@@ -24,11 +24,6 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
             new RegisterForm().Show();
         }
 
-        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
-        {
-            txtPassword.UseSystemPasswordChar = !chkShowPassword.Checked;
-        }
-
         private void btnReset_Click(object sender, EventArgs e)
         {
             txtUsername.Clear();
@@ -48,6 +43,19 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
             {
                 MessageBox.Show("Invalid username or password.");
             }
+        }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false; // show password
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true; // hide password
+            }
+
         }
     }
 

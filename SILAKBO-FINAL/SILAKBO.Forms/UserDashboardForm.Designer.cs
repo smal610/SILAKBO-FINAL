@@ -69,6 +69,7 @@
             btnMyProfile.TabIndex = 2;
             btnMyProfile.Text = "My Profile";
             btnMyProfile.UseVisualStyleBackColor = true;
+            btnMyProfile.Click += btnMyProfile_Click;
             // 
             // btnSubmitReport
             // 
@@ -79,6 +80,7 @@
             btnSubmitReport.TabIndex = 3;
             btnSubmitReport.Text = "Submit Report";
             btnSubmitReport.UseVisualStyleBackColor = true;
+            btnSubmitReport.Click += btnSubmitReport_Click;
             // 
             // btnTrackCase
             // 
@@ -89,6 +91,7 @@
             btnTrackCase.TabIndex = 4;
             btnTrackCase.Text = "Track Case";
             btnTrackCase.UseVisualStyleBackColor = true;
+            btnTrackCase.Click += btnTrackCase_Click;
             // 
             // btnSupportResources
             // 
@@ -99,6 +102,7 @@
             btnSupportResources.TabIndex = 5;
             btnSupportResources.Text = "Support Resources";
             btnSupportResources.UseVisualStyleBackColor = true;
+            btnSupportResources.Click += btnSupportResources_Click;
             // 
             // btnLogout
             // 
@@ -123,6 +127,8 @@
             Controls.Add(btnMyProfile);
             Controls.Add(lblWelcome);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "UserDashboardForm";
             Text = "User Dashboard";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

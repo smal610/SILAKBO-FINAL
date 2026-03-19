@@ -73,6 +73,8 @@
             Controls.Add(pictureBox1);
             Controls.Add(btnRefresh);
             Controls.Add(dgvReports);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AdminDashboard";
             Text = "AdminDashboard";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

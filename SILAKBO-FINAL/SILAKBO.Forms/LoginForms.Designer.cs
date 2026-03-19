@@ -101,6 +101,7 @@
             chkShowPassword.TabIndex = 6;
             chkShowPassword.Text = "Show Password";
             chkShowPassword.UseVisualStyleBackColor = false;
+            chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
             // btnLogin
             // 
@@ -166,9 +167,10 @@
             Controls.Add(lblPassword);
             Controls.Add(lblUsername);
             Controls.Add(pBLogo);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForms";
-            Text = "LoginForms";
+            Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pBLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();

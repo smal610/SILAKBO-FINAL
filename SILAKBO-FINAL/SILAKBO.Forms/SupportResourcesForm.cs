@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using SILAKBO_FINAL.SILAKBO.Models;
 
 namespace SILAKBO_FINAL.SILAKBO.Forms
 {

@@ -178,6 +178,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtName);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MyProfileForm";
             Text = "MyProfileForm";

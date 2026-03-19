@@ -74,9 +74,10 @@
             Controls.Add(btnRefresh);
             Controls.Add(pictureBox1);
             Controls.Add(dgvReports);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "TrackCaseForm";
-            Text = "TrackCaseForm";
+            Text = "Track Case";
             ((System.ComponentModel.ISupportInitialize)dgvReports).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

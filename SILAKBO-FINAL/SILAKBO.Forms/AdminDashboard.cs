@@ -1,4 +1,6 @@
-﻿namespace SILAKBO_FINAL.SILAKBO.Forms
+﻿using SILAKBO_FINAL.SILAKBO.Models;
+
+namespace SILAKBO_FINAL.SILAKBO.Forms
 {
     public partial class AdminDashboard : Form
     {

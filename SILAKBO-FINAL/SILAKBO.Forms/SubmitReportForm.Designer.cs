@@ -182,6 +182,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtFullName);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SubmitReportForm";
             Text = "Submit Report";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

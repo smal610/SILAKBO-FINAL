@@ -74,6 +74,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(btnRefresh);
             Controls.Add(dgvSupport);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SupportResourcesForm";
             Text = "SupportResourcesForm";

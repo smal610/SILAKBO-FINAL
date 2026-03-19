@@ -165,6 +165,7 @@
             btnRegister.TabIndex = 13;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // btnLogin
             // 
@@ -177,6 +178,7 @@
             btnLogin.TabIndex = 12;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // chkShowPassword
             // 
@@ -189,6 +191,7 @@
             chkShowPassword.TabIndex = 14;
             chkShowPassword.Text = "Show Password";
             chkShowPassword.UseVisualStyleBackColor = false;
+            chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
             // label6
             // 
@@ -223,6 +226,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pBLogo);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "RegisterForm";
             Text = "Register New Account";
             ((System.ComponentModel.ISupportInitialize)pBLogo).EndInit();
