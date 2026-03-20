@@ -101,7 +101,7 @@ namespace SILAKBO_FINAL.SILAKBO.Forms
         {
             try
             {
-                var reports = reportRepo.GetReportsByUser(0); // 0 = all reports
+                var reports = reportRepo.GetReportsByUser(0);
                 var statusCounts = reports.GroupBy(r => r.Status)
                                           .Select(g => new { Status = g.Key, Count = g.Count() })
                                           .ToList();
